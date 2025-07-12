@@ -2,18 +2,17 @@
 
 AI-powered array sorting using GPT.
 
-## Install
+## Usage
 
+Install the package:
 ```bash
-pip install -e .
+pip install vibesort
 ```
 
-Set your OpenAI API key as an environment variable:
+Set your OpenAI API key as an environment variable.
 ```bash
 export OPENAI_API_KEY=your_key_here
 ```
-
-## Use
 
 ```python
 from vibesort import vibesort

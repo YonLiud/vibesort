@@ -42,12 +42,12 @@ Then use vibesort with local models:
 ```python
 from vibesort import vibesort
 
-# Use default local model (llama3.2)
+# Use default local model (qwen3:8b)
 result = vibesort([5, 2, 8, 1, 9], use_local=True)
 print(result)  # [1, 2, 5, 8, 9]
 
 # Specify a different local model
-result = vibesort([5, 2, 8, 1, 9], use_local=True, local_model="qwen2.5:7b")
+result = vibesort([5, 2, 8, 1, 9], use_local=True, local_model="deepseek-coder:6.7b")
 print(result)  # [1, 2, 5, 8, 9]
 ```
 

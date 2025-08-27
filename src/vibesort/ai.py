@@ -16,7 +16,7 @@ class VibesortRequest(BaseModel):
     order: Literal["asc", "desc"] = "asc"
 
 
-def vibesort(array: list[int], use_local: bool = False, local_model: str = "llama3.2") -> list[int]:
+def vibesort(array: list[int], use_local: bool = False, local_model: str = "qwen3:8b") -> list[int]:
     return structured_output(
         content=VibesortRequest(array=array).model_dump_json(),
         response_format=VibesortResponse,

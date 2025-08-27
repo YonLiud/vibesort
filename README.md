@@ -28,9 +28,9 @@ print(result)  # [1, 2, 5, 8, 9]
 You can use local models via Ollama instead of OpenAI. First, install and run Ollama:
 
 1. Install Ollama from [ollama.ai](https://ollama.ai)
-2. Pull a model (e.g., llama3.2):
+2. Pull a model (e.g., qwen3:8b):
    ```bash
-   ollama pull llama3.2
+   ollama pull qwen3:8b
    ```
 3. Start the Ollama server:
    ```bash
